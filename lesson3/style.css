@@ -1,0 +1,167 @@
+body {
+  background-color: rgba(23, 23, 23, 1);
+  ;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100vh;
+}
+
+.header {
+  /* width: 1440px; */
+  height: 70px;
+  background-color: rgba(31, 31, 31, 1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header span {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 50px;
+  font-size: 20px;
+  color: #fff;
+}
+
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+  padding-right: 50px;
+  font-size: 20px;
+  color: #fff;
+}
+
+a:hover {
+  color: rgba(43, 155, 253, 1);
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  column-gap: 50px;
+  padding: 50px;
+}
+
+h1 {
+  font-size: 30px;
+  color: #fff;
+  margin-top: 60px;
+}
+
+.title {
+  width: 70vw;
+  margin: 0 auto;
+  margin-top: 60px;
+}
+
+.menu {
+  color: #fff;
+  margin: 0 0 auto;
+}
+.menu article {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+  gap: 10px;
+}
+
+article span {
+  background-color: rgba(41, 41, 41, 1);
+  width: 260px;
+  height: 120px;
+  text-align: center;
+  padding: 80px;
+}
+
+.devises {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  flex-basis: 844px;
+}
+
+.devises li {
+  width: 260px;
+  /* height: 155px; */
+  background-color: rgba(31, 31, 31, 1);
+  ;
+  padding: 15px;
+}
+
+.devises a {
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  /* padding-top: 25%; */
+  color: #fff;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.devises a h3, .devises a h5 {
+  margin: 0;
+}
+
+.devises a:hover {
+  color: rgba(43, 155, 253, 1);
+}
+
+.news {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  column-gap: 50px;
+  padding: 25px;
+}
+
+.news_list {
+  display: flex;
+  gap: 20px;
+  flex-wrap:nowrap;
+  flex-basis: 844px;
+}
+
+.news_list li {
+  width: 285px;
+  /* height: 155px; */
+  /* background-color: rgba(31, 31, 31, 1); */
+  padding: 15px;
+}
+
+.news_list a {
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  /* padding-top: 25%; */
+  color: #fff;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.news_list a h5 {
+  margin: 0;
+}
+
+.news_list a:hover {
+  color: rgba(43, 155, 253, 1);
+}
+
+footer {
+  /* width: 1440px; */
+  height: 70px;
+  background-color: rgba(31, 31, 31, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer p {
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+}
