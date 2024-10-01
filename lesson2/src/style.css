@@ -1,16 +1,21 @@
 body {
-  box-sizing: border-box;
   display: flex;
   flex-flow: column wrap;
+  max-width: 940px;
   padding: 50px;
+  margin: 0 auto;
   font-family: Arial, Helvetica, sans-serif;
   color: #f1f1f1;
   background-color: #131416;
 }
 
+nav {
+  display: flex;
+  flex-wrap: nowrap;
+  column-gap: 25px;
+}
+
 nav li {
-  display: inline;
-  margin-right: 25px;
   border-bottom: 1px solid #f08c46;
 }
 
@@ -21,16 +26,11 @@ nav li {
 }
 
 .articles-list li {
-  width: 300px;
   padding: 16px;
   background-color: #252525;
 }
 
-nav li:hover {
-  color: #f08c46;
-}
-
-.title h1 {
+h1 {
   margin-top: 25px;
   margin-bottom: 25px;
   font-size: 25px;
@@ -41,16 +41,13 @@ nav li:hover {
   font-size: 20px;
 }
 
-.articles-list h3 {
+.articles-list p {
   display: block;
   margin: 25px 0;
 }
 
 .articles-list h4 {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: end;
-  margin-top: auto;
+  text-align: right;
 }
 
 .footer p {
