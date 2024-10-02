@@ -4,7 +4,7 @@ const product = {
   count: 100
 }
 
-console.log(`Название товара: ${product.name}, Цена товара: ${product.prise}, Кол-во товара на складе: ${product.count}`)
+console.log(`Название товара: ${product.name}, Цена товара: ${product.price}, Кол-во товара на складе: ${product.count}`)
 
 if (product.count > 10) {
   console.log('Товара достаточно')
@@ -15,7 +15,7 @@ if (product.count > 10) {
 }
 
 function getProduct(product) {
-  return `${product.name} стоят ${product.prise} руб.`
+  return `${product.name} стоят ${product.price} руб.`
 }
 
 console.log(getProduct(product))
