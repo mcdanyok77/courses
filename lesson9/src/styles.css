@@ -8,6 +8,7 @@
 
 body {
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  color: var(--color-sand12);
   background-color: var(--bgcolor);
 }
 
@@ -26,7 +27,7 @@ body {
   height: 582px;
 }
 
-.main-img {
+.img {
   width: 320px;
   height: 400px;
 }
@@ -88,24 +89,16 @@ h2 {
 }
 
 .btn.buy {
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: center;
-  justify-content: center;
-  width: 134px;
-  height: 42px;
+  align-self: flex-start;
   padding: 8px 24px;
-  font-size: 16px;
   font-weight: 500;
   color: var(--color-sand2);
-  text-align: center;
-  background-color: #fff;
+  cursor: pointer;
   background-color: var(--color-primary);
   border-radius: 10px;
 }
 
 .btn.buy:hover {
-  cursor: pointer;
   background-color: var(--color-primary-hover);
 }
 
@@ -114,8 +107,6 @@ summary {
   flex-wrap: nowrap;
   align-items: center;
   justify-content: space-between;
-  width: 480px;
   font-size: 16px;
   font-weight: 700;
-  color: var(--color-sand12);
 }

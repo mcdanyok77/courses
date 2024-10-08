@@ -1,6 +1,6 @@
 {
   "name": "lesson9",
-  "private":true,
+  "private": true,
   "devDependencies": {
     "@shcherbin/stylelint-config": "^0.1.1",
     "stylelint": "^16.9.0"
