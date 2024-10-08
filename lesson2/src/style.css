@@ -9,7 +9,7 @@ body {
   background-color: #131416;
 }
 
-nav {
+nav ul {
   display: flex;
   flex-wrap: nowrap;
   column-gap: 25px;
@@ -42,11 +42,10 @@ h1 {
 }
 
 .articles-list p {
-  display: block;
   margin: 25px 0;
 }
 
-.articles-list h4 {
+.articles-list address {
   text-align: right;
 }
 
