@@ -1,36 +1,34 @@
+const str = 'hello, world!'
+console.log(str.length)
 
-
-let str = "hello, world!";
-console.log(str.length);
-
-function reverseString(str) {
-  return str.split('').reverse().join('');
+function reverseString(str1) {
+  return str1.split('').reverse().join('')
 }
 
-console.log(reverseString(str));
+console.log(reverseString(str))
 
-function containsSubstring(str, substring) {
-  return str.includes(substring);
+function containsSubstring(str1, substring) {
+  return str1.includes(substring)
 }
 
-console.log(containsSubstring(str, "world"));
-console.log(containsSubstring(str, "hi"));
+console.log(containsSubstring(str, 'world'))
+console.log(containsSubstring(str, 'hi'))
 
-let arr = ["string", 52];
+const arr = ['string', 52]
 
-console.log(arr.length);
+console.log(arr.length)
 
-arr.unshift(true, null);
-arr.push({key: "value"}, [1, 2, 3]);
+arr.unshift(true, null)
+arr.push({ key: 'value' }, [1, 2, 3])
 
-console.log(arr.length);
+console.log(arr.length)
 
-arr.splice(2, 2);
+arr.splice(2, 2)
 
-console.log(arr);
+console.log(arr)
 
-function reverseArray(arr) {
-    return arr.slice().reverse();
+function reverseArray(arr1) {
+  return arr1.slice().reverse()
 }
 
-console.log(reverseArray(arr));
+console.log(reverseArray(arr))
