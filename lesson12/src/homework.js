@@ -60,7 +60,7 @@ const students = [
   { name: 'Alex', grade: 78 }
 ]
 
-const sortedStudents = students.sort((a, b) => b.grade - a.grade)
+const sortedStudents = students.toSorted((a, b) => b.grade - a.grade)
 
 console.log(sortedStudents)
 
@@ -80,7 +80,7 @@ const cars = [
   { model: 'BMW', color: 'blue' },
   { model: 'Audi', color: 'black' }
 ]
-function findColor(cars, color) {
+function findColor(car, color) {
   return cars.some((car) => car.color === color)
 }
 
@@ -93,6 +93,6 @@ const purchases = [
   { item: 'Laptop', date: '2023-09-05' },
   { item: 'Phone', date: '2023-09-01' }
 ]
-const reversedPurchases = purchases.reverse()
+const reversedPurchases = purchases.toReversed()
 
 console.log(reversedPurchases)
