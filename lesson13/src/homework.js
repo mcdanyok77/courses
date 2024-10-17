@@ -23,7 +23,7 @@ const transactions = [
   { id: 3, type: 'income', amount: 200 },
   { id: 4, type: 'expense', amount: 50 }
 ]
-function getTotalBalance(transactions) {
+function getTotalBalance(transaction) {
   return transactions.reduce((balance, transaction) => (transaction.type === 'income' ? balance + transaction.amount : balance - transaction.amount), 0)
 }
 console.log(getTotalBalance(transactions))
@@ -109,9 +109,9 @@ delayedMessage('Hello, world!', 2000)
 // task 10
 async function fetchProducts() {
   try {
-    const response = await fetch('https://jsonplaceholder.typicode.com/todos/1')
+    const response = await fetch('https://dummyjson.com/products?limit=10&select=title,price')
     const data = await response.json()
-    console.log(data.title)
+    console.log(data.products)
   } catch (error) {
     console.error('Не удалось получить данные')
   }
