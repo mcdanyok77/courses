@@ -1,0 +1,18 @@
+:root {
+  --color-yellow-10: #ffff57;
+  --color-sand-2: #191918;
+  --color-sand-12: #eeeeec;
+}
+
+body {
+  padding: 24px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--color-sand-12);
+  background-color: var(--color-sand-2);
+}
+
+.is-hidden {
+  display: none;
+}
