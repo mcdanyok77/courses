@@ -2,13 +2,13 @@ async function fetchProducts(id) {
   try {
     const response = await fetch(`https://dummyjson.com/products/${id}`)
     const data = await response.json()
-    return data
+    console.log(data)
   } catch (error) {
     console.error('Не удалось получить данные')
   }
 }
 
-//fetchProducts(1)
+// fetchProducts(1)
 
 async function getProducts() {
   const [firstId, secondId, thirdId] = await Promise.all([
