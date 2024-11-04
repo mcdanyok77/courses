@@ -1,0 +1,7 @@
+.greeting {
+  color: yellow;
+}
+
+.greeting:hover {
+  color: red;
+}
