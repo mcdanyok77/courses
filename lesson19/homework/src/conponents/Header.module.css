@@ -1,0 +1,9 @@
+.nav {
+  display: flex;
+  flex-wrap: nowrap;
+  column-gap: 25px;
+}
+
+.nav-li {
+  border-bottom: 1px solid #f08c46;
+}

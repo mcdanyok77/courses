@@ -1,0 +1,10 @@
+body {
+  display: flex;
+  flex-flow: column wrap;
+  max-width: 940px;
+  padding: 50px;
+  margin: 0 auto;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #f1f1f1;
+  background-color: #131416;
+}
