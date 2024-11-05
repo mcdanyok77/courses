@@ -5,7 +5,10 @@
 }
 
 .articles-list-li {
+  width: 300px;
+  height: 420px;
   padding: 16px;
+  padding: 24px 20px 16px;
   background-color: #252525;
 }
 

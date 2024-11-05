@@ -1,4 +1,4 @@
-import styles from './Main.module.css'
+import styles from '/Users/mcdanyok/Desktop/courses/lesson19/homework/src/conponents/Main.module.css'
 
 const cards = [
   { title: 'SEO для начинающих', author: 'Иван Иванович', image: 'https://doka.guide/html/semantics/demos/bad-markup/images/seo-course.png', text: 'Благодаря этому курсу вы научитесь задавливать конкурентов с помощью ссылочной массы, а не качественного контента.', date: '13 февраля 2023' },
@@ -18,7 +18,7 @@ export default function Main() {
               <address className={styles['articles-list-address']}>{card.author}</address>
               {card.image && <img src={card.image} alt={card.title} />}
               <p className={styles['articles-list-p']}>{card.text}</p>
-              <time dateTime={new Date(card.date).toISOString()}>{card.date}</time>
+              <time dateTime={new Date('01.01.2000').toISOString()}>{card.date}</time>
             </article>
           </li>))}
       </ul>
