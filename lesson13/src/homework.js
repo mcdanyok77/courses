@@ -11,7 +11,7 @@ const products = [
   { id: 2, name: 'Ноутбук', inStock: false },
   { id: 3, name: 'Часы', inStock: false }
 ]
-function isAnyProductInStock(product) {
+function isAnyProductInStock() {
   return products.some((product) => product.inStock)
 }
 console.log(isAnyProductInStock(products))
@@ -23,8 +23,12 @@ const transactions = [
   { id: 3, type: 'income', amount: 200 },
   { id: 4, type: 'expense', amount: 50 }
 ]
-function getTotalBalance(transaction) {
-  return transactions.reduce((balance, transaction) => (transaction.type === 'income' ? balance + transaction.amount : balance - transaction.amount), 0)
+function getTotalBalance() {
+  return transactions.reduce((balance, transaction) => (
+    transaction.type === 'income'
+      ? balance + transaction.amount
+      : balance - transaction.amount
+  ), 0)
 }
 console.log(getTotalBalance(transactions))
 
@@ -34,11 +38,11 @@ const user = {
   email: 'john@example.com',
   age: 25
 }
-function getObjectKeys(obj) {
-  return Object.keys(obj)
+function getObjectKeys(object) {
+  return Object.keys(object)
 }
-function getObjectValues(obj) {
-  return Object.values(obj)
+function getObjectValues(object) {
+  return Object.values(object)
 }
 console.log(getObjectKeys(user))
 console.log(getObjectValues(user))
@@ -49,8 +53,8 @@ const cart = {
   banana: 3,
   orange: 1
 }
-function printReceipt(cart) {
-  for (const [item, quantity] of Object.entries(cart)) {
+function printReceipt(carts) {
+  for (const [item, quantity] of Object.entries(carts)) {
     console.log(`${item}: ${quantity} шт.`)
   }
 }
@@ -91,7 +95,7 @@ function checkNumber(number) {
     if (number > 10) {
       resolve('Число больше 10')
     } else {
-      reject('Число 10 или меньше')
+      reject(new Error('Число 10 или меньше'))
     }
   })
 }
@@ -99,12 +103,12 @@ checkNumber(15).then(console.log).catch(console.error)
 checkNumber(5).then(console.log).catch(console.error)
 
 // task 9
-function delayedMessage(message, delay) {
+function delayMessage(message, delay) {
   setTimeout(() => {
     console.log(message)
   }, delay)
 }
-delayedMessage('Hello, world!', 2000)
+delayMessage('Hello, world!', 2000)
 
 // task 10
 async function fetchProducts() {
