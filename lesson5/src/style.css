@@ -1,0 +1,465 @@
+body {
+  background-color: rgb(25 25 24 / 100%);
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+header {
+  display: flex;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  background-color: rgb(34 34 33 / 100%);
+  color: #fff;
+}
+
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.container.header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 1280px;
+  padding: 20px 32px;
+  margin: 0 auto;
+}
+
+.logo_nav {
+  display: flex;
+  gap: 64px;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 0.3;
+  gap: 12px;
+}
+
+.logo svg {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: azure;
+  color: #000;
+}
+
+.logo svg:hover {
+  background-color: #000;
+  color:azure;
+}
+
+.nav {
+  display: flex;
+  gap: 32px;
+}
+
+.active {
+  display: none;
+  position: absolute;
+  top: 72px;
+  left: 297px;
+  padding: 24px;
+  background-color: rgb(62 62 60 / 100%);
+}
+
+.active li {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 20px;
+}
+
+.active li:hover {
+  display: flex;
+  flex-direction: column;
+}
+
+img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.burger {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: #fff;
+}
+
+.container.block{
+  margin: 30px auto 0;
+  padding-top: 100px;
+}
+
+.devises {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 32px
+}
+
+.devises li{
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  width: 100%;
+  max-width: 258px;
+  height: 300px;
+  padding: 20px;
+  border-radius: 12px;
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Logan_Rock_Treen_closeup.jpg/1200px-Logan_Rock_Treen_closeup.jpg');
+  background-size: auto 100%;
+}
+
+.devises article {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 20px;
+  border-radius: 8px;
+  background-color: rgb(255 255 255 / 70%);
+}
+
+article h3 {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+article p {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+h1 {
+  margin: 32px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.boxes {
+  display: grid;
+  grid-gap: 16px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  justify-content: center;
+  padding: 20px;
+}
+
+.div1 { 
+  grid-area: 1 / 1 / 2 / 2;
+  background-color: rgb(34 34 33 / 100%);
+}
+
+.div2 { 
+  grid-area: 2 / 1 / 3 / 2; 
+  background-color: rgb(34 34 33 / 100%);
+}
+
+.div3 { 
+  grid-area: 3 / 1 / 6 / 2; 
+  background-color: rgb(34 34 33 / 100%);
+}
+
+.div4 { 
+  grid-area: 1 / 2 / 3 / 3; 
+  background-color: rgb(34 34 33 / 100%);
+}
+
+.div5 { 
+  grid-area: 3 / 2 / 6 / 3; 
+  background-color: rgb(34 34 33 / 100%);
+}
+
+.div6 { 
+  grid-area: 1 / 3 / 3 / 5;
+  background-color: rgb(34 34 33 / 100%);
+}
+
+.div7 { 
+  grid-area: 3 / 3 / 5 / 4; 
+  background-color: rgb(34 34 33 / 100%);
+}
+
+.div8 { 
+  grid-area: 3 / 4 / 5 / 5; 
+  background-color: rgb(34 34 33 / 100%);
+}
+
+.div9 { 
+  grid-area: 5 / 3 / 6 / 5; 
+  height: 146px;
+  background-color: rgb(34 34 33 / 100%);
+}
+
+@media (width >= 600px) {
+  .container.header {
+    padding: 0 24px;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .container.block {
+    padding: 120px 24px;
+  }
+
+  .devises {
+    display: grid;
+    grid-template-rows: 300px 300px;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+
+  .container.boxes {
+    display: grid;
+    grid-template-rows: 138px 138px 292px 446px 292px 138px;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+
+  .div1 {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+    background-color: #222221;
+  }
+
+  .div2 {
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+    background-color: #222221;
+  }
+
+  .div3 {
+    grid-row: 1 / 3;
+    grid-column: 2 / 3;
+    background-color: #222221;
+  }
+
+  .div4 {
+    grid-row: 3 / 4;
+    grid-column: 1 / 3;
+    background-color: #222221;
+  }
+
+  .div5 {
+    grid-row: 4 / 5;
+    grid-column: 1 / 2;
+    background-color: #222221;
+  }
+
+  .div6 {
+    grid-row: 4 / 5;
+    grid-column: 2 / 3;
+    background-color: #222221;
+  }
+
+  .div7 {
+    grid-row: 5 / 6;
+    grid-column: 1 / 2;
+    background-color: #222221;
+  }
+
+  .div8 {
+    grid-row: 5 / 6;
+    grid-column: 2 / 3;
+    background-color: #222221;
+  }
+
+  .div9 {
+    grid-row: 6 / 7;
+    grid-column: 1 / 3;
+    background-color: #222221;
+  }
+}
+
+@media (width >= 744px) {
+  .container.header {
+    padding: 0 32px;
+  }
+
+  .nav:not(.active) {
+    display: flex;
+  }
+
+  .burger {
+    display: none;
+  }
+
+  .nav {
+    position: relative;
+  }
+
+  .active {
+    position: absolute;
+    flex-direction: column;
+    row-gap: 12px;
+    align-items: flex-start;
+    justify-content: flex-end;
+    width: 208px;
+    padding: 16px;
+    background-color: #3e3e3c;
+  }
+
+  .nav:hover .active {
+    display: flex;
+  }
+
+  .container.block {
+    padding: 120px 32px;
+  }
+
+  .devises {
+    display: grid;
+    grid-template-rows: 300px 300px;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+  }
+
+  .container.boxes {
+    display: grid;
+    grid-template-rows: 138px 138px 292px 446px 292px 138px;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+
+  .div1 {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+    background-color: #222221;
+  }
+
+  .div2 {
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+    background-color: #222221;
+  }
+
+  .div3 {
+    grid-row: 1 / 3;
+    grid-column: 2 / 3;
+    background-color: #222221;
+  }
+
+  .div4 {
+    grid-row: 3 / 4;
+    grid-column: 1 / 3;
+    background-color: #222221;
+  }
+
+  .div5 {
+    grid-row: 4 / 5;
+    grid-column: 1 / 2;
+    background-color: #222221;
+  }
+
+  .div6 {
+    grid-row: 4 / 5;
+    grid-column: 2 / 3;
+    background-color: #222221;
+  }
+
+  .div7 {
+    grid-row: 5 / 6;
+    grid-column: 1 / 2;
+    background-color: #222221;
+  }
+
+  .div8 {
+    grid-row: 5 / 6;
+    grid-column: 2 / 3;
+    background-color: #222221;
+  }
+
+  .div9 {
+    grid-row: 6 / 7;
+    grid-column: 1 / 3;
+    background-color: #222221;
+  }
+}
+
+@media (width >= 1280px) {
+  .devises {
+    display: grid;
+    grid-template-rows: 300px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 32px;
+  }
+
+  .container.boxes {
+    display: grid;
+    grid-template-rows: 138px 138px 292px 138px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 16px;
+  }
+
+  .div1 {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+    background-color: #222221;
+  }
+
+  .div2 {
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+    background-color: #222221;
+  }
+
+  .div3 {
+    grid-row: 1 / 3;
+    grid-column: 2 / 3;
+    background-color: #222221;
+  }
+
+  .div4 {
+    grid-row: 1 / 3;
+    grid-column: 3 / 5;
+    background-color: #222221;
+  }
+
+  .div5 {
+    grid-row: 3 / 5;
+    grid-column: 1 / 2;
+    background-color: #222221;
+  }
+
+  .div6 {
+    grid-row: 3 / 5;
+    grid-column: 2 / 3;
+    background-color: #222221;
+  }
+
+  .div7 {
+    grid-row: 3 / 4;
+    grid-column: 3 / 4;
+    background-color: #222221;
+  }
+
+  .div8 {
+    grid-row: 3 / 4;
+    grid-column: 4 / 5;
+    background-color: #222221;
+  }
+
+  .div9 {
+    grid-row: 4 / 5;
+    grid-column: 3 / 5;
+    background-color: #222221;
+  }
+}
+  
