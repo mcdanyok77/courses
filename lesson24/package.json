@@ -1,0 +1,29 @@
+{
+  "name": "lesson24",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint:js": "eslint .",
+    "lint:styles": "stylelint '**/*.css'",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@fontsource-variable/montserrat": "^5.1.0",
+    "react": "19.0.0-rc.1",
+    "react-dom": "19.0.0-rc.1",
+    "the-new-css-reset": "^1.11.3"
+  },
+  "devDependencies": {
+    "@shcherbin/eslint-config": "^0.10.2",
+    "@shcherbin/stylelint-config": "^0.2.0",
+    "@types/react": "npm:types-react@19.0.0-rc.1",
+    "@types/react-dom": "npm:types-react-dom@19.0.0-rc.1",
+    "@vitejs/plugin-react": "^4.3.3",
+    "eslint": "^9.15.0",
+    "stylelint": "^16.10.0",
+    "vite": "^5.4.11"
+  },
+  "packageManager": "pnpm@9.12.3+sha512.cce0f9de9c5a7c95bef944169cc5dfe8741abfb145078c0d508b868056848a87c81e626246cb60967cbd7fd29a6c062ef73ff840d96b3c86c40ac92cf4a813ee",
+  "type": "module",
+  "private": true
+}

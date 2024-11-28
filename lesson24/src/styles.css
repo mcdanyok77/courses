@@ -1,0 +1,46 @@
+body {
+  max-width: 720px;
+  padding: 24px;
+  margin: 0 auto;
+  font-family: "Montserrat Variable", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #eeeeec;
+  background-color: #111110;
+}
+
+h1,
+h2 {
+  font-weight: 700;
+}
+
+h1 {
+  margin-bottom: 24px;
+  font-size: 20px;
+}
+
+h2 {
+  margin-bottom: 8px;
+}
+
+button {
+  width: 100%;
+  padding: 8px 16px;
+  text-align: center;
+  cursor: pointer;
+  background-color: #46a758;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: #53b365;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    background-color: #3b3a37;
+  }
+}
+
+section {
+  margin: 32px 0;
+}

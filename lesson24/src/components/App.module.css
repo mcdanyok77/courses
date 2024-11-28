@@ -1,0 +1,36 @@
+.error {
+  margin-bottom: 8px;
+  color: #e5484d;
+}
+
+.form {
+  display: grid;
+  row-gap: 16px;
+}
+
+.input {
+  display: grid;
+  row-gap: 4px;
+
+  input {
+    padding: 10px 16px;
+    border: 1px solid #2a2a28;
+  }
+}
+
+.checkbox {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 16px;
+  align-items: center;
+
+  input {
+    width: 24px;
+    height: 24px;
+    border: 1px solid #2a2a28;
+
+    &:checked {
+      background-color: #46a758;
+    }
+  }
+}
